@@ -18,6 +18,10 @@
 
 - kecbm.dev
 
-## Libs
+## Tecnologias utilizadas
 
-- https://ant.design/
+- Typescript
+- React
+- Styled Components
+- Ant Design (https://ant.design/)
+- Tradução (react-i18next)
