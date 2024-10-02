@@ -1,6 +1,10 @@
 import React from 'react';
 import { Layout, Menu } from 'antd';
 import { HomeOutlined, ContactsOutlined, ReadOutlined, UserOutlined, CodeOutlined } from '@ant-design/icons';
+import Home from './pages/Home';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import FooterComponent from './components/Footer';
 const { Header, Content, Footer } = Layout;
 
 const App = () => {
@@ -72,6 +76,7 @@ const App = () => {
           padding: '0 48px',
           minHeight: '100vh',
           maxHeight: 'fit-content',
+          backgroundColor: '#ffffff',
         }}
       >
         <div
@@ -83,7 +88,7 @@ const App = () => {
             Width: '100%',
           }}
         >
-          Home
+          <Home />
         </div>
         <div
           id="about"
@@ -94,7 +99,7 @@ const App = () => {
             Width: '100%',
           }}
         >
-          Sobre
+          <About />
         </div>
         <div
           id="contact"
@@ -105,7 +110,7 @@ const App = () => {
             Width: '100%',
           }}
         >
-          Contato
+          <Contact />
         </div>
       </Content>
       <Footer
@@ -116,7 +121,7 @@ const App = () => {
           fontWeight: 'bold',
         }}
       >
-        Desenvolvido com 🖤 por <a href="https://github.com/kecbm" style={{ color: '#0e0c0d' }}>Klecianny Melo</a>
+        <FooterComponent />
       </Footer>
     </Layout>
   );
