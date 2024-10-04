@@ -4,6 +4,8 @@ import { HomeOutlined, ContactsOutlined, ReadOutlined, UserOutlined, CodeOutline
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Projects from './pages/Projects';
+import Articles from './pages/Articles';
 import FooterComponent from './components/Footer';
 const { Header, Content, Footer } = Layout;
 
@@ -49,18 +51,18 @@ const App = () => {
             <a href="#about">Sobre</a>
           </Menu.Item>
           <Menu.Item
-            key="3"
+            key="projects"
             icon={<CodeOutlined />}
             style={{ color: '#ffffff' }}
           >
-            Projetos
+            <a href="#projects">Projetos</a>
           </Menu.Item>
           <Menu.Item
-            key="4"
+            key="articles"
             icon={<ReadOutlined />}
             style={{ color: '#ffffff' }}
           >
-            Artigos
+            <a href="#articles">Artigos</a>
           </Menu.Item>
           <Menu.Item
             key="contact"
@@ -100,6 +102,28 @@ const App = () => {
           }}
         >
           <About />
+        </div>
+        <div
+          id="projects"
+          style={{
+            padding: 24,
+            minHeight: '100vh',
+            maxHeight: 'fit-content',
+            Width: '100%',
+          }}
+        >
+          <Projects />
+        </div>
+        <div
+          id="articles"
+          style={{
+            padding: 24,
+            minHeight: '100vh',
+            maxHeight: 'fit-content',
+            Width: '100%',
+          }}
+        >
+          <Articles />
         </div>
         <div
           id="contact"
