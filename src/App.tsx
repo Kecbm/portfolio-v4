@@ -7,10 +7,11 @@ import Projects from './pages/Projects';
 import Articles from './pages/Articles';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
+import StyledApp from './StyledApp';
 
 const App: React.FC = () => {
   return (
-    <main>  
+    <StyledApp>
       <Header />
       <Router>
         <Routes>
@@ -22,7 +23,7 @@ const App: React.FC = () => {
         </Routes>
       </Router>
       <Footer />
-    </main>
+    </StyledApp>
   );
 }
 
