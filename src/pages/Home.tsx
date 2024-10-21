@@ -1,12 +1,11 @@
-import { Layout } from 'antd';
-const { Content } = Layout;
+import StyledContent from './StyledHome';
 
 const Home: React.FC = () => {
 
   return (
-    <Content>
+    <StyledContent>
         <h1>Home</h1>
-    </Content>
+    </StyledContent>
   );
 };
 
