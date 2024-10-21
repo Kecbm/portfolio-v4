@@ -1,8 +1,6 @@
 import React from 'react';
-import { Layout, Menu } from 'antd';
 import { HomeOutlined, UserOutlined, CodeOutlined, FileTextOutlined, ContactsOutlined } from '@ant-design/icons';
-import StyledHeader from './StyledHeader';
-const { Header: HeaderComponent } = Layout;
+import { StyledHeader, StyledMenu } from './StyledHeader';
 
 const Header: React.FC = () => {
   const handleClick = (e: any) => {
@@ -11,33 +9,41 @@ const Header: React.FC = () => {
 
   return (
     <StyledHeader>
-        <HeaderComponent>
-            <Menu 
-                mode="horizontal"
-                onClick={handleClick}
+        <StyledMenu 
+            mode="horizontal"
+            onClick={handleClick}
+        >
+            <StyledMenu.Item
+                key="/"
+                icon={<HomeOutlined />}
             >
-                <Menu.Item
-                    key="/"
-                    icon={<HomeOutlined />}
-                />
-                <Menu.Item
-                    key="/about"
-                    icon={ <UserOutlined /> }
-                />
-                <Menu.Item
-                    key="/projects"
-                    icon={ <CodeOutlined />}
-                />
-                <Menu.Item
-                    key="/articles"
-                    icon={ <FileTextOutlined />}
-                />
-                <Menu.Item
-                    key="/contact"
-                    icon={ <ContactsOutlined />}
-                />
-            </Menu>
-        </HeaderComponent>
+                Home
+            </StyledMenu.Item>
+            <StyledMenu.Item
+                key="/about"
+                icon={ <UserOutlined /> }
+            >
+                Sobre
+            </StyledMenu.Item>
+            <StyledMenu.Item
+                key="/projects"
+                icon={ <CodeOutlined />}
+            >
+                Projetos
+            </StyledMenu.Item>
+            <StyledMenu.Item
+                key="/articles"
+                icon={ <FileTextOutlined />}
+            >
+                Artigos
+            </StyledMenu.Item>
+            <StyledMenu.Item
+                key="/contact"
+                icon={ <ContactsOutlined />}
+            >
+                Contato
+            </StyledMenu.Item>
+        </StyledMenu>
     </StyledHeader>
   );
 };
