@@ -9,6 +9,7 @@ Tela:
 - Ciza médio: #EFEFEF
 - Cinza 3: #414141
 - Cinza claro: #EEEEEE
+- Cinza 4: #D5D5D5
 - Preto: #000000
 - Branco: #FFFFFF
 - Rosa: #FF0059
