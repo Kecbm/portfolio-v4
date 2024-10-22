@@ -12,7 +12,7 @@ Tela:
 - Cinza 4: #D5D5D5
 - Preto: #000000
 - Branco: #FFFFFF
-- Rosa: #FF0059
+- Rosa: #F11052
 
 ## Seções
 
