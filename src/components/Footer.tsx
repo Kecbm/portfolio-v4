@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
   return (
     <StyledFooter>
       <h1 id='title-ft-one'>Colaboração, Foco em Resultados e Aprendizado Contínuo.</h1>
-      <p id='sub-title-ft-one'>Como desenvolvedora pleno, integro times de tecnologia com disposição para colaborar, compartilhar conhecimento e entregar produtos de alta qualidade que geram valor para o negócio.</p>
+      <p id='sub-title-ft-one'>Como desenvolvedora pleno full stack, integro times de tecnologia com disposição para colaborar, compartilhar conhecimento e entregar produtos de alta qualidade que geram valor para o negócio.</p>
 
       <br />
 
