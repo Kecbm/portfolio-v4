@@ -42,7 +42,7 @@ const Footer: React.FC = () => {
           <InstagramFilled className='newtwork-icon-ft' />
         </div>
 
-        <p id='Copyright'>Desenvolvido com <HeartFilled /> por <a href="https://github.com/kecbm">Klecianny Melo</a></p>
+        <p id='Copyright'>Desenvolvido com <HeartFilled /> por <a href="https://github.com/kecbm" className='link-ft'>Klecianny Melo</a></p>
       </section>
     </StyledFooter>
   );
