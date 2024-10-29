@@ -7,6 +7,7 @@ const StyledFooter = styled(AntFooter)`
   max-width: 100%;
   background-color: #000000;
   color: #FFFFFF;
+  min-height: 100vh;
   height: fit-content;
   padding: 100px 400px 100px 400px;
   font-family: 'Roboto';
@@ -48,6 +49,10 @@ const StyledFooter = styled(AntFooter)`
     color: #F11052;
   }
 
+  .link-ft::selection {
+    background-color: #FFFFFF;
+  }
+
   #section-three-ft {
     display: flex;
     flex-direction: column;
@@ -59,17 +64,29 @@ const StyledFooter = styled(AntFooter)`
     font-size: 73px;
   }
 
+  #newtwork-links-ft {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
   #network-ft {
     font-size: 11px;
+    margin-top: 80px;
   }
 
   .newtwork-icon-ft {
     font-size: 32px;
+    cursor: pointer;
+    padding: 10px;
   }
 
   #Copyright {
     font-size: 10px;
     color: #777777;
+    margin: 80px;
   }
 `;
 
