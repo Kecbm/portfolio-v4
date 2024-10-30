@@ -33,3 +33,7 @@ Tela:
 - Styled Components
 - Ant Design (https://ant.design/)
 - Tradução (react-i18next)
+
+## To Do
+
+- Refatorar a estilização do footer para utilizar o display flez do Ant Design
